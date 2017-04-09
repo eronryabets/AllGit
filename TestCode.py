@@ -37,6 +37,20 @@ print(cat)
 # чтобы в случае задания аргумента она печатала содержимое указанной директории,
 # и печатающей список всех файлов в данной директории если директория не указана.
 
+"""
+#Пример наличия доступа файла фуу тхт
+#https://www.tutorialspoint.com/python/os_access.htm
+#http://www.ilnurgi1.ru/docs/python/modules/os.html?highlight=os.name#os.name
+import os, sys
+
+ret = os.access("C:/Games/foo.txt", os.F_OK)
+print("F_OK - return value %s"% ret)
+
+"""
+
 import os
-print("OS name: ", os.uname(version))
+print("OS name: ", os.name)
 print("Файлы и папки дирректории : ", os.listdir('.')) #список всех файлов и дирректорий
+#ret = (os.access("C:/Git/AllGit/", os.F_OK))
+#print("F_OK - return value %s"% ret)
+print("Наличие правильности пути: ", os.access("C:/Git/AllGit/", os.F_OK))
