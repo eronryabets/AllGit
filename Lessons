@@ -1,0 +1,136 @@
+current = 14:00
+time_hours = 51
+#сколько будет если курент сложить с таймером
+#14+51 = 65 % 24
+========================
+
+print('first text')
+#идет обьявление функции
+def print_hello():
+	print("Hello World")
+#телло функции закончено
+print('second text')
+#print_hello()
+====================
+def print_hello():
+	print ("hello ", end=" ")
+	print("hello ")
+
+def get_name():
+	name = input("Enter your name: ")
+	print_hello(),
+	print(name)
+
+get_name()
+======================
+
+x = 42
+y = x
+
+print(y)
+
+del x
+
+#print(x)
+#print(y)
+
+========================
+
+#s = input()
+#max - встроенная функция
+#print(max(s))
+
+s = "abc"
+print (max(s))
+======
+def get_max_char(s):
+	print(max(s))
+
+s = input()
+
+get_max_char(S)
+
+=========================
+
+def get_max_char(x):
+	y = x
+	print(max(y))
+
+s = input()
+
+get_max_char(S)
+# переменная y - локальна, видна только в теле функции
+========================
+
+def get_max_char(x):
+	y = x
+	print(max(y))
+
+s = input()
+
+get_max_char(S)
+
+def get_max_char(x):
+	y = x
+	print(max(y))
+
+s = input()
+y = 1
+print(y) #два разных Y
+
+get_max_char(S)
+
+====================
+
+
+def get_max_char(x, z):
+	y = x
+	print(max(y))
+
+s = input()
+y = 1
+
+get_max_char(s, y)
+get_max_char(z = y, x = s)
+
+=====================
+
+def get_max_char(x = "bcd"):
+	print(max(x))
+
+s = "abc"
+
+get_max_char(s)
+get_max_char()
+
+========================
+
+def f():
+	pass # pass - используеться для заглушек, ибо пустую функцию написать нельзя
+
+=========================
+
+x = 42
+
+def f():
+	# TODO - ключевое слово - что бы "сделать потом"
+
+===================
+# работа с возвращаемыми значениям
+
+def get_max_char(x = "bcd"):
+#	print(max(x))
+    return max(x) # возвращение знач.
+
+
+
+s = "abc"
+
+ret = get_max_char
+print(ret)
+
+#None - говорит что данных нет
+# это не ноль, это не пусто...
+# ответ С - так как задали аргумент Эс
+
+===================================
