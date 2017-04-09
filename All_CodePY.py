@@ -1,46 +1,19 @@
-#import - подключение модуля
-# должен отдилятся двумя пустыми строчками
-#import random
-#help(random)
-#print(random.randint(1, 6))
-#module.method - module_name.method_name
-#x = 7
-#x % 6
-#print(x % 6)
+#LECTURE #
 
-#prefix = "Hi, "
-prefix = "Hi"
-name = input ('Please, enter a name')
-#print("Hi ", name)
-#print('Hi, ', name, sep='')
-#print(prefix + name)
-# plus для формирования строк некогда не используется
-print('{},{}'.format(prefix, name))
-#format(prefix, name)) - переменные
-# колво скобок слева - должны соответствовать аргументам (как тут, префикс, нейм)
-===========================================
-
-prefix = "Hi"
-name = input('Please, enter a name :')
-#print(prefix , name)
-#print('{},{}'.format(prefix, name))
-#format(prefix, name)) - переменные # = (str(prefix), name)
-# колво скобок слева - должны соответствовать аргументам (как тут, префикс, нейм)
-
-print('{} вставляет символ, или слово между Hi и input_name {}'.format(prefix, name))
-#print(prefix, name)
-
-print('{} вставленный текст между {}'.format(prefix, name))
-========================================
+"""
 prefix = 'Привет, '
 name = input('Введите свое имя: ')
 name_prb = name + ' '
 fam = input('Введите свою Фамилию: ')
 print('{} :) {}{}'.format(prefix, name_prb , fam+'!'))  #Привет,  :) Asder Aderovich!
-
-========================================
-
-#LECTURE #
+"""
+"""
+#14 i 51
+current = input("vvedite vase vremya ")
+timer_hours = input("vvedite chasov timera ")
+timer_off = ((int(current) + int(timer_hours)) % 24)
+print("Timer viklychitsa kogda na chasah bydet ", timer_off)
+"""
 """
 alian = print(type(32))
 alian
@@ -161,9 +134,3 @@ print(alian) #1
 increment()
 print(alian) #2
 """
-=============================================
-hours = float(input("Введите рабочие часы: "))
-rate = float(input("Введите ставку"))
-result = str(hours * rate)
-print("Ответ " + result)
-============================================
