@@ -1,21 +1,29 @@
 
+"""
+def printTwice(bruce):
+  print(bruce, bruce)
+ printTwice(bruce)
+"""
+"""
+def add(x, y):
+    return x + y
 
-#increment = прирост
-alian = 0
-def increment():
-    global alian
-    #global - Возвращает словарь, представляющий текущую глобальную таблицу символов. Это всегда словарь текущего модуля
-    # (внутри функции или метода, это модуль, где он определен, а не модуль, из которого она называется).
-    #Вообщем global запоминает последнее значение нашей переменной "alian" и при каждом вызове добавляет + 1
-    alian = alian + 1
-print(alian) #0
-increment()
+print(add(1, 20))
+"""
 
-balian = 2
+"""Анонимные функции, инструкция lambda
+Анонимные функции могут содержать лишь одно выражение, но и выполняются они быстрее. Анонимные функции
+ создаются с помощью инструкции lambda. Кроме этого, их не обязательно присваивать переменной,
+ как делали мы инструкцией def func():
 
-def increment2():
-    global balian
-    alian = balian + 1
+ lambda функции, в отличие от обычной, не требуется инструкция return, а в остальном, ведет себя точно так же:
 
-lora = increment + increment2
-print(lora)
+func = lambda x, y: x + y
+print(func(1,4))
+"""
+
+def catTwice(part1, part2):
+    cat = "part1" + "part2"
+
+catTwice("aaa", "bbb")
+print(cat)
