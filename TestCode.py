@@ -55,4 +55,7 @@ print("Файлы и папки дирректории : ", os.listdir('.')) #с
 #print("F_OK - return value %s"% ret)
 print("Наличие правильности пути: ", os.access("C:/Git/AllGit/", os.F_OK))
 #print(os.listdir("C:/Games/")) # выводит список файлов и папок указанной директории
+#diros = input("Введите свою дирректорию : ")
 #print(os.listdir("C:/Games/"))
+print("Введите дирректорию: ")
+print("В данной директории : ", os.listdir(input()))
