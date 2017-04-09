@@ -1,9 +1,17 @@
 http://ps.readthedocs.io/ru/latest/strings.html
-https://pythonworld.ru/osnovy/vstroennye-funkcii.html
-https://docs.python.org/3/library/functions.html#globals
+https://pythonworld.ru/osnovy/vstroennye-funkcii.html Встроенные функции
+https://docs.python.org/3/library/functions.html#globals Built-in Functions
 
 https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html функции
+https://pythonworld.ru/osnovy/rabota-s-modulyami-sozdanie-podklyuchenie-instrukciyami-import-i-from.html модули
 
+https://pythonworld.ru/osnovy/rabota-s-modulyami-sozdanie-podklyuchenie-instrukciyami-import-i-from.html модули
+http://pythonicway.com/python-modules модули
+---------------------------
+module os
+https://pythonworld.ru/moduli/modul-os-path.html
+https://pythonworld.ru/moduli/modul-os.html
+http://www.ilnurgi1.ru/docs/python/modules/ospath.html
 ======================================
 current = 14:00
 time_hours = 51

@@ -21,9 +21,14 @@ print(add(1, 20))
 func = lambda x, y: x + y
 print(func(1,4))
 """
-
+"""
 def catTwice(part1, part2):
     cat = "part1" + "part2"
 
 catTwice("aaa", "bbb")
 print(cat)
+"""
+
+import os
+os.getcwd() # os.path.abspath('.')
+print(os.listdir('.')) #список всех файлов и дирректорий
