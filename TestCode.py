@@ -40,7 +40,7 @@ else:
     print("Third")
 """
 
-
+"""
 
 number = int(input("input your numbers "))
 if 0 <= number <= 30:
@@ -52,3 +52,35 @@ elif 31 <= number <= 60:
 else:
     number > 61
     print("Third")
+"""
+"""
+
+x = 11
+if 0 < x < 10:
+    print("x is a positive single digit.")
+
+"""
+
+"""
+x = 2
+
+if x < 2:
+    print("x less than 2")
+elif x >= 2:
+    print("x equal or greater 2")
+else:
+    print("Never print") #это условие никогда не выполниться
+"""
+
+"""
+if x < 2:
+    print(x, " less than 2")
+elif x < 20:
+    print(x, " less than 20")
+elif x < 10:
+    print(x, " less than 10") #это условие никогда не выполниться
+else:
+    print("Smth else")
+"""
+
+
