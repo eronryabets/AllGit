@@ -218,3 +218,23 @@ else:
 
 """
 
+#"""
+
+#Exercise lecture 4
+
+#hours = 42
+#rate = 10
+#2а аргумента
+#hours <= 40
+#hours * rate
+#если 42а отработали, и рейт 10 уе в час - то должны посчитать 40 по 10 и 2а по 15
+
+def calc_paid(hours, rate):
+    if hours >= 40:
+        return 40 * rate + (hours - 40) * rate * 1.5
+    return hours * rate
+
+
+assert calc_paid(20, 10) == 200
+assert calc_paid(42, 10) == 430
+
