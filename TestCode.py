@@ -233,7 +233,7 @@ def calc_paid(hours, rate):
     if hours > 40:
         return 40 * rate + (hours - 40) * rate * 1.5
     return hours * rate
-
+# нарушение модульности, один вход один выход, тут два выхода
 
 assert calc_paid(20, 10) == 200
 assert calc_paid(42, 10) == 430
