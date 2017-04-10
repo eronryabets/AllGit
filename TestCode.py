@@ -228,7 +228,7 @@ else:
 #hours <= 40
 #hours * rate
 #если 42а отработали, и рейт 10 уе в час - то должны посчитать 40 по 10 и 2а по 15
-
+"""
 def calc_paid(hours, rate):
     paid = None
  if hours > 40:
@@ -241,3 +241,39 @@ def calc_paid(hours, rate):
 assert calc_paid(20, 10) == 200
 assert calc_paid(42, 10) == 430
 
+"""
+"""
+#Exercise
+Rewrite your pay computation to give the employee
+1.5 times the hourly rate for hours worked above 40  hours.
+
+Перепишите расчет зарплаты, чтобы дать сотруднику
+1,5-кратная почасовая ставка для часов, отработанных свыше 40 часов.
+
+Время работы: 45
+Введите тариф: 10
+Оплатить: 475,0
+
+Enter Hours: 45
+Enter Rate: 10
+Pay: 475.0
+
+475 = 40 * 10 + 5 * 15
+
+"""
+hours = 40
+rate = 10
+
+def calc_paid(hours, rate):
+    if hours > 40:
+        return 40 * rate + ((hours - 40) * 15)
+    else:
+        hours <= 40
+        return 40 * rate
+
+pay = calc_paid(hours, rate)
+print(pay)
+
+
+assert calc_paid(40, 10) == 400
+assert calc_paid (45, 10) == 475
