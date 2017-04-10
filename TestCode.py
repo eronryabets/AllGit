@@ -141,8 +141,44 @@ x = 7
 assert is_even(x) == False
 """
 
-#"""
+"""
 
 #Пример 7
 
 #Программа - Тесты - Документация
+# if - elif (одно или несколько) - в конце else
+x = 10
+y = 1
+if x < y:
+    print("{} is less than {}".format (x, y))
+#elif abbreviation else if
+elif x > y:
+    print("{} is greater than {}".format(x, y))
+else :
+    print("{} and {} are equal".format(x, y))
+
+# switch - в питоне такого оператора нет, он в роли Иф и Елс
+
+"""
+
+#"""
+
+#Пример 8
+
+def function_c():
+    pass
+
+
+choise = "D"
+
+if choise == "A":
+    function_a()
+elif choise ==  "B":
+    function_b()
+elif choise == "C":
+    function_c()
+else:
+    print("Invalid choise.")
+
+
+print("Next line")
