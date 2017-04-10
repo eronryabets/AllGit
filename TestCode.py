@@ -161,7 +161,7 @@ else :
 
 """
 
-#"""
+"""
 
 #Пример 8
 
@@ -182,3 +182,39 @@ else:
 
 
 print("Next line")
+
+"""
+"""
+#x = 2
+x = "a"
+#print(len(x))
+print(ord("a"))
+
+if x < 97:
+    print("x less than 2")
+elif x  >= 97:
+    print("x equal or greater 2")
+else:
+    print("Smth else")
+
+#print(ord("a")) - по букве - возвращает его числовое значение (под каким оно идет)
+# пайтон3 сравнивает еще типы конструкции и ето не проходит, во 2м проходит
+
+"""
+
+"""
+#Пример 9
+
+x = 9
+
+if x < 2:
+    print("{} less than 2".format(x))
+elif x < 20:
+    print("{} less than 20".format(x))
+elif x < 10:
+    print("{} less than 10".format(x)) #никогда не будет выполнен, статическая часть кода
+else:
+    print("Smth else")
+
+"""
+
