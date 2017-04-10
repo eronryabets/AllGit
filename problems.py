@@ -60,3 +60,43 @@ print(f())
 
 """
 
+"""
+hours = 42
+rate = 10
+
+def calc_paid(hours, rate):
+    #paid = None
+    if hours > 40:
+        return 40 * rate + (hours - 40) * rate * 1.5
+    else:
+        #paid = hours * rate
+        return hours * rate
+# нарушение модульности, один вход один выход, тут два выхода
+
+pay = calc_paid(hours, rate)
+print(pay)
+assert calc_paid(20, 10) == 200
+assert calc_paid(42, 10) == 430
+# ЗАЧЕМ нужна переменная paid - когда код выполняеться и без нее?
+#================================================================
+"""
+"""
+#МОЙ код
+hours = int(input("Введите рабочие часы: "))
+rate = 10
+
+def calc_paid(hours, rate):
+    if hours > 40:
+        return 40 * rate + ((hours - 40) * 15)
+    else:
+        hours <= 40
+        return 40 * rate
+
+pay = calc_paid(hours, rate)
+print(pay)
+
+
+assert calc_paid(40, 10) == 400
+assert calc_paid (45, 10) == 475
+
+"""
