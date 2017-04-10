@@ -208,4 +208,58 @@ print(hex(id(count)))
 #11
 #0x1e04a5a0
 """
+#====================================================================================================
+"""
+#Пример наличия доступа файла фуу тхт
+#https://www.tutorialspoint.com/python/os_access.htm
+#http://www.ilnurgi1.ru/docs/python/modules/os.html?highlight=os.name#os.name
+import os, sys
 
+ret = os.access("C:/Games/foo.txt", os.F_OK)
+print("F_OK - return value %s"% ret)
+
+"""
+"""
+
+import os
+print("OS name: ", os.name)
+print("Файлы и папки дирректории : ", os.listdir('.')) #список всех файлов и дирректорий в корне где и данный скрипт
+#ret = (os.access("C:/Git/AllGit/", os.F_OK))
+#print("F_OK - return value %s"% ret)
+print("Наличие правильности пути: ", os.access("C:/Git/AllGit/", os.F_OK))
+#print(os.listdir("C:/Games/")) # выводит список файлов и папок указанной директории
+#diros = input("Введите свою дирректорию : ")
+#print(os.listdir("C:/Games/"))
+print("Введите дирректорию, файлы которой хотите просмотреть: ")
+print("В данной директории : ", os.listdir(input()))
+"""
+"""
+#1
+import os
+print("Файлы и папки дирректории : ", os.listdir('.')) #список всех файлов и дирректорий в корне где и данный скрипт
+"""
+"""
+# Задача 2: Напишите функцию, принимающую в качестве аргумента директорию,
+# и печатающей список всех файлов в данной директории.
+
+
+
+def dirname():
+    import os
+    print("Файлы и папки дирректории : ", os.listdir('.'))
+    x = os.listdir('.')
+    return os.listdir('.')
+
+print(dirname())
+"""
+
+"""
+#v2
+def dirname():
+    import os
+    print("Введите дирректорию, файлы которой хотите просмотреть: ")
+    print("В данной директории : ", os.listdir(input()))
+    return os.listdir('.')
+
+print(dirname())
+"""

@@ -41,3 +41,11 @@ print(balian) #4
 print(alian + balian) #6
 
 """
+"""
+def dirname():
+    import os
+    print("Файлы и папки дирректории : ", os.listdir('.'))
+    return os.listdir('.')
+
+print(dirname())
+"""
