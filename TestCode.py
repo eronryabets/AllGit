@@ -230,8 +230,11 @@ else:
 #если 42а отработали, и рейт 10 уе в час - то должны посчитать 40 по 10 и 2а по 15
 
 def calc_paid(hours, rate):
-    if hours > 40:
+    paid = None
+ if hours > 40:
         return 40 * rate + (hours - 40) * rate * 1.5
+    else:
+        paid = hours * rate
     return hours * rate
 # нарушение модульности, один вход один выход, тут два выхода
 
