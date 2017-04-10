@@ -655,3 +655,13 @@ if number%2 == 0:
     print(number, " число четное")
 else: print(number, " число не четное")
 """
+"""
+def atom(number):
+    if number % 2 == 0:
+        print(number, " число четное")
+    else:
+        print(number, " число не четное")
+
+
+print(atom(int(input("введите число "))))
+"""

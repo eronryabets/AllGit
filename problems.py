@@ -100,3 +100,15 @@ assert calc_paid(40, 10) == 400
 assert calc_paid (45, 10) == 475
 
 """
+"""
+# проблема была, что при вводе 63, выводило и второй и третий, но тогда я не использовал elif
+# ввод 61, не исполняется при if и elif, следовательно использовался и завершился при else
+number = int(input("input your numbers "))
+if 0 <= number <= 30:
+    print(number, "first")
+elif  number >= 30 and number <= 60:
+    print("second")
+else:
+    number > 61
+    print("Third")
+"""
