@@ -126,9 +126,13 @@ def isDivisible(x, y):
   return x % y == 0
 print(isDivisible(1,4))
 """
+"""
+#Проверка типов
+#isinstance - проверяет тип аргумента
+#isinstance - проверяет тип аргумента
 
 
-
+"""
 
 
 
