@@ -665,3 +665,28 @@ def atom(number):
 
 print(atom(int(input("введите число "))))
 """
+"""
+x = 2
+y = 2
+lol = int(x + y)
+#print(type(lol))
+#print(lol) #4
+
+asder = lol
+def increment():
+    global asder
+    asder = asder + 1
+
+increment()
+increment()
+print(asder)
+
+def treedef ():
+    return asder + lol + 5
+
+
+
+print(treedef())
+
+"""
+
