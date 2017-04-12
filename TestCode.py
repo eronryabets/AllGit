@@ -1,170 +1,117 @@
+"""
+x = 42
+
+if x == 42:
+    print("Magic")
+
+else:
+    #TODO: add code later
+    pass
+
+print("next")
+
+#Заглушка, на дальнейшую разработку.
+"""
+"""
+
+x = "3"
+if x <= 2:
+    print("less ot equel")
+
+else:
+    print("Greater")
+"""
+"""
+#в рекурсивной функции обязательно должно стоять условие
+
+def countdown(n):
+    if n == 0:
+        print("Start")
+        return
+
+    print(n)
+
+    countdown(n - 1)
 
 
 
-"""
-#12. Повышенной сложности: Напишите Python функцию print_digits, которая принимает в качестве аргумента целое число
-диапазоне [0,100), то есть наименьшее значение 0, но меньше чем 100. и печатает сообщение "The tens digit is %, and
- the ones digit is %.", где знак процента должен быть заменен соответствующими значениями. (Подсказка: используйте
- арифметические операторы целочисленного деления // и остатка от деления % для нахождения чисел.
-"""
-"""
-import random
-randnumber = random.randint(0, 100)
-print(randnumber)
-"""
-
-"""
-#ЛЕКЦИЯ 5 - параметры
-def says(word):
-    if word == "es":
-        print("Ok - its ES")
-    elif word == "fr":
-        print("OK - its FR")
-    else :
-        print("No")
-
-
-print(says("fr"))
-"""
-"""
-def greet():
-    return "Hello"
-print(greet(), "Eron")
-"""
-"""
-#ЛЕКЦИЯ 5 - возвращаемое значение
-def says(word):
-    if word == "es":
-        return "Hello"
-    elif word == "fr":
-        return "Privet"
-    else :
-        return "Hi"
-
-print(says("es"), "Eron")
-"""
-"""
-big = max("Hello word")
-print(big)
+countdown(10)
 """
 
 """
-def addtwo (a, b):
-    added = a + b
-    return added
-x = addtwo(3, 5)
-print(x)
-"""
-"""
-import math
-def area(radius):
-    temp = math.pi * radius**2
-    return temp
+#n! = n*(n-1)!
 
-print(area(180))
-"""
-"""
-import math
-def area(radius):
-    return math.pi * radius**2
-print(area(180))
+def factorial(n):
+    if n == 0:
+        return 1
 
-"""
-"""
-#нахождение растояния между двумя точками - написал сам, дальше пример лекции - ниже под задачей
-import math
-def distance (x1, y1, x2, y2):
-    return math.sqrt((x2 - x1)**2+(y2 - y1)**2)
-print(distance (1,2,4,6))
-#vernet 5.0 (verno)
-"""
-"""
-#1 часть
-def distance(x1, y1, x2, y2):
-    dx = x2 - x1
-    dy = y2 - y1
-    print("dx is ", dx)
-    print("dy is ", dy)
-    return 0.0
-print(distance (1,2,4,6))
-"""
-"""
-#часть 2
-def distance(x1, y1, x2, y2):
-    dx = x2 - x1
-    dy = y2 - y1
-    dsquared = dx**2 + dy**2
-    print("dsquared is: ", dsquared)
-    return 0.0
-print(distance (1,2,4,6)) #vivod 25
-"""
-"""
-#часть 3
-import math
-def distance(x1, y1, x2, y2):
-    dx = x2 - x1
-    dy = y2 - y1
-    dsquared = dx ** 2 + dy ** 2
-    result = math.sqrt(dsquared)
-    return result
-print(distance (1,2,4,6)) # 5.0
-"""
-"""
-#Логические функции
+    return n * factorial(n-1)
 
-def isDivisible(x, y):
-  if x % y == 0:
-    return True
-  else:
-    return False
-
-print(isDivisible(1,4))
-
-"""
-"""
-def isDivisible(x, y):
-  return x % y == 0
-print(isDivisible(1,4))
-"""
-"""
-#Проверка типов
-#isinstance - проверяет тип аргумента
-#isinstance - проверяет тип аргумента
-
+assert factorial(3) == 6
+print(factorial(5))
+# 5 * 4 * 3 * 2 * 1 - факториал, тобишь вывод 120 верны№
 
 """
 
+"""
+
+#n! = n*(n-1)!
+#Числа Фибоначи
+
+def fibonacci(n):
+    if n <= 0:
+        return 1# c 0 не работал) что бы не нарушить сумму - при суммировании + 0 делаем. а при умножении умножаем на 1
+
+
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+assert fibonacci(3) == 5
+
+"""
+"""
+#While - LOOP - lecture 6
+#вариант рекурсией выводим сто строк для печати
+def print_line(n):
+    if n == 0:
+        return
+
+    print()
+
+    print_line(n-1)
+
+print_line(100)
+"""
+
+#"""
+# While - выполн ципочечные операции, работает со счетчиками
+"""
+def print_line(n):
+    while n > 0:
+        print("text")
+        n -= 1
 
 
 
+print_line(3)
+"""
+"""
+def print_line(n):
+    counter = n
 
+    while counter > 0:
+        print()
+        counter -= 1
+        #n = n - 1
+print_line(4)
 
+"""
+#"""
+def print_line(n):
+    counter = n
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    while counter > 0:
+        print()
+        counter -= 1
+        #n = n - 1
+print_line(4)
