@@ -106,12 +106,106 @@ def print_line(n):
 print_line(4)
 
 """
-#"""
+"""
 def print_line(n):
+    if n <= 0:# до вайла - участок кода - наз гуардиан
+        return #просто выходим из функции, если мотриц значение
+
+    if not isinstance(n, int): # если N не исинстант - выйдем вообще
+        return
     counter = n
 
     while counter > 0:
         print()
         counter -= 1
         #n = n - 1
+"""
+
+"""
 print_line(4)
+print_line(3.3)
+
+def print_line(n):
+    if (n <=0) or (not isinstance(n, int)):
+        return
+
+    counter = n
+
+    while counter > 0:
+        print()
+        counter -= 1
+        #n = n - 1
+
+
+print_line(4)
+print_line(3.3)
+"""
+
+"""
+
+abc = "abc"
+#ch - имя переменной к которой идет обращение в функции
+if __name__ == '__main__':
+    for ch in abc:
+        print(ch)
+
+
+#итерратор - заходит 4е раза, на 4ый раз видит маркер - что сымволы закончились и выходит
+
+"""
+"""
+abc = "abc"
+print(type(abc))
+
+for ch in abc:
+    print(ch, type(ch))
+
+print(ch)
+"""
+
+"""
+
+#нумерация в массивах идет с нуля
+
+
+abc = "abcd"
+i = 0
+print(len(abc))
+
+while i < len(abc):
+    print("{}: {}".format(i, abc[i]))
+    i +=1
+
+#индекс полседнего символа -1
+abc[len(abc)-1]
+
+#while i < 3:
+#    print(abc[i])
+#    i += 1
+#
+#print(i)
+"""
+
+"""
+abc = "abc"
+#range возвращает цифры в заданом диапазоне 4 = 1 2 3
+for i in range(len(abc)):
+    print(abc[1])
+
+"""
+
+"""
+
+#range(n) возвращает от 0 ... до n-1
+
+#list(range(1,4,2))
+
+s = "abcdefg"
+
+for i in range(1, len(s), 2):
+    print(s[i])
+
+"""
+
+#"""
+
