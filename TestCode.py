@@ -208,13 +208,14 @@ for i in range(1, len(s), 2):
 """
 
 """
-#lecture6
-aggregate = 0 # в эту перменную сумируем числа
+lecture6
 
-for i in range(1, 102):
-    aggregate += i
+    aggregate = 0 # в эту перменную сумируем числа
 
-print(aggregate)
+    for i in range(1, 102):
+        aggregate += i
+
+    print(aggregate)
 """
 
-sum(range(1, 102))
+#%timeit sum(range(1, 102))
