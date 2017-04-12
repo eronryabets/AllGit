@@ -207,7 +207,7 @@ for i in range(1, len(s), 2):
 
 """
 
-#"""
+"""
 #lecture6
 aggregate = 0 # в эту перменную сумируем числа
 
@@ -215,3 +215,6 @@ for i in range(1, 102):
     aggregate += i
 
 print(aggregate)
+"""
+
+sum(range(1, 102))
