@@ -272,7 +272,7 @@ def sequence(n):
 
 sequence(5)
 """
-
+"""
 def get_temp():
     print("temperature")
 
@@ -291,3 +291,28 @@ while True:
         break
     else:
         print("Enter valid choise.")
+"""
+"""
+
+while True:
+    line = input()
+    if __name__ == '__main__':
+        if line[0] == "#": #esli pervi simvol reshetka to ..
+            continue
+        else:
+            print(line)
+
+"""
+"""
+s = "abc"
+
+#s[len(s)-1]
+s[-2]
+"""
+
+s = "abba"
+#print(s[0] = "d" # "abba")
+#"d" + s[1:len(s)] #libo tak - posled stroky. esli granica ne ykazana to on s nachala do konca
+s = "abbaa"
+"d" + s[1:4:2] #s 1go po 4iy s shagom 2 . shag mona i v otricatelnom vvesti :-1
+#"d" + s
