@@ -309,10 +309,39 @@ s = "abc"
 #s[len(s)-1]
 s[-2]
 """
+"""
 
 s = "abba"
 #print(s[0] = "d" # "abba")
 #"d" + s[1:len(s)] #libo tak - posled stroky. esli granica ne ykazana to on s nachala do konca
 s = "abbaa"
-"d" + s[1:4:2] #s 1go po 4iy s shagom 2 . shag mona i v otricatelnom vvesti :-1
+#"d" + s[1:4:2] #s 1go po 4iy s shagom 2 . shag mona i v otricatelnom vvesti :-1
 #"d" + s
+s[: : -1] # perepisat stroky zadon na pered - v obratnom napravlenii
+
+"""
+"""
+s = "abc"
+
+length = len(s) -1
+
+while length >= 0:
+    print(s[length], end="")
+    length -= 1
+
+s[::-1] # ili tak k primery
+"""
+
+#nyzno napisat fynkciy kotoraya proveraet slovo polindrom ( naprimer "kak")
+
+
+def is_polendrom(s): #pristavka is y bylevih
+    reverse = s[::-1]
+    if reverse == s:
+        return True
+    else:
+        return False
+
+
+assert is_polendrom("abba") == True
+assert is_polendrom("abc") == False
