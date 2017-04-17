@@ -337,6 +337,7 @@ s[::-1] # ili tak k primery
 
 def is_polendrom(s): #pristavka is y bylevih
     reverse = s[::-1]
+    #return s[::-1] == s # ili eto zavers
     if reverse == s:
         return True
     else:
