@@ -342,6 +342,10 @@ def is_polendrom(s): #pristavka is y bylevih
     else:
         return False
 
+    #ili ze v odny stro4ky ---  return s == s[::-1]
+
+
 
 assert is_polendrom("abba") == True
 assert is_polendrom("abc") == False
+"""
