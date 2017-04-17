@@ -219,3 +219,4 @@ lecture6
 """
 
 #%timeit sum(range(1, 102))
+print(10+1)
