@@ -217,6 +217,77 @@ lecture6
 
     print(aggregate)
 """
-
+"""
 #%timeit sum(range(1, 102))
-print(10+123)
+print(10+1)
+NEW LECTIONS 6
+"""
+"""
+def f(x):
+    return x ** 2
+
+f(2)
+
+def main():
+    print(f(2))
+if __name__ == "__main__": #eto blok yslovnogo vipolnenia
+    main()
+
+"""
+"""
+import time
+print("one")
+time.sleep(3) # zaderzka ispolnenia v 3 sec
+
+print("two")
+
+
+"""
+"""
+
+s = "生年月日"
+us = u"生年月日"
+
+# 1. Length
+length = len(s)
+print(length)
+
+# 2. Last symbol
+last = s[length-1]
+print(last)
+
+# 2. Last symbol
+last = s[-1]
+print(last)
+"""
+
+"""
+def sequence(n):
+    while n != 1:
+        print(n, end='')
+        if n % 2 == 0:  # n is even
+            n = n / 2
+        else:  # n is odd
+            n = n * 3 + 1
+
+sequence(5)
+"""
+
+def get_temp():
+    print("temperature")
+
+
+def get_pressure():
+    print("pressure")
+
+
+while True:
+    choise = input("Enter choise (1-temp, -pressure, q-quit: ")
+    if choise == "1":
+        get_temp()
+    elif choise == "2":
+        get_pressure()
+    elif choise == "q":
+        break
+    else:
+        print("Enter valid choise.")
