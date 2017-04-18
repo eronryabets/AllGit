@@ -1,4 +1,5 @@
 #LECTURE #
+-*- coding: utf-8 -*-
 
 """
 prefix = 'Привет, '
