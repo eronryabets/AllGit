@@ -4,9 +4,10 @@
 import random
 import time
 
-# message = ""
-#questions = input(str("Задайте свой вопрос магическому Шару...")
-time.sleep(1)
+print("Сияниче магического Шара сковало ваш взор...")
+time.sleep(0.5)
+questions = input(str("Задайте свой вопрос магическому Шару..." + "\n"))
+time.sleep(0.5)
 
 def number_to_fortune(num):
     if num == 0:
@@ -37,6 +38,20 @@ def number_to_fortune(num):
         return "Я обычный шар, а не предсказатель!"
 
 num = random.randrange(0, 7)
-print(number_to_fortune(num))
+time.sleep(0.5)
+
+#print(number_to_fortune(num))
 #TEST#print(number_to_fortune(17))
 #time.sleep(3) # zaderzka ispolnenia v 3 sec
+time.sleep(0.5)
+
+print("И так, Ваш вопрос ... - " + str(questions))
+time.sleep(1)
+
+print("Ты трясешь мистический Шар ...")
+time.sleep(0.8)
+
+print("Магические завихрения приковывают твой взор ...")
+time.sleep(0.6)
+
+print("Магический Шар говорит ..." + str(questions) + "\n" + (number_to_fortune(num)))
