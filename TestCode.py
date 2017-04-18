@@ -5,8 +5,8 @@ import random
 import time
 
 # message = ""
-print("Задайте свой вопрос магическому Шару...")
-time.sleep(3)
+#questions = input(str("Задайте свой вопрос магическому Шару...")
+time.sleep(1)
 
 def number_to_fortune(num):
     if num == 0:
