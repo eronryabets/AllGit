@@ -34,6 +34,7 @@ print("Finished")
 
 
 """
+"""
 #Напишите программу, которая печатает сумму чисел от 1 до 25
 #Которые делятся на 5 (используйте цикл while)
 #Ответ: 75
@@ -55,3 +56,19 @@ print("Finished")
 
 assert 5 + 10 + 15 + 20 + 25 == 75
 #assert i == 75
+"""
+
+
+"""
+#DZ
+
+aggregate = 0 # в эту перменную сумируем числа
+a = range(0, 101)
+for i in a:
+    #print(i)
+    if i % 5 == 0:
+        aggregate += i
+
+print(aggregate)
+assert aggregate == 1050
+"""
