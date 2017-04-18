@@ -47,13 +47,19 @@ print(aggregate)
 #120
 
 
-import math
-n = int(input("Введите целое число..."))
-#math.factorial(n)
-print(math.factorial(n))
-#nan = math.factorial(n)
-#while nan >= 0:
-#    print("фавкториал числа ", n, "Равен ", nan )
-#    break
+#import math
+#n = int(input("Введите целое число..."))
+#print("Факториал вашего целого числа ", math.factorial(n))
+
+n = int(input("Введите положительное целое число: "))
+def fac(n):
+    fac = 1
+    i = 0
+    while i < n:
+        i += 1
+        fac = fac * i
+    return fac
+print("Факториал вашего числа: ",fac(n))
+
 
 """
