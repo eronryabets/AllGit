@@ -169,5 +169,24 @@ s = "banana"
 
 assert count_vowels(s) == 3
 """
+"""
+
+def count_volwes(s):
+    return len(list(filter(lambda x: x in "aeiou" , s)))
+
+s = "banana"
+
+assert count_volwes(s) == 3
+
+#%timeit count_volwes(s)
+
+#print(len(list("aaa")))
+"""
+
+s = "abba"
 
 
+substr = "ab"
+#S.rindex(str, [start],[end])
+
+print(s.rfind("ab"))
