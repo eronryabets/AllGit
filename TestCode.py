@@ -67,7 +67,30 @@ s = "Question"
 #s[:] polychim kopiy ishodnoi stroki - vse simvoli
 #print([s])
 """
-
+"""
 empty = ""
 empty[:]
+"""
+"""
+def count_vowels(s):
+    pass
 
+
+s = "banana"
+
+
+assert count_vowels(s) == 3
+"""
+"""
+s = "banana"
+
+for i in s:
+    print(i, end="")
+"""
+s = "banana"
+
+i = 0
+
+while i < len(s):
+    print(s[i], end="")
+    i+=i
