@@ -73,7 +73,7 @@ empty[:]
 """
 """
 def count_vowels(s):
-    pass
+    
 
 
 s = "banana"
@@ -111,4 +111,63 @@ else:
 """
 "a" in "abc" #True
 """
+
+"d" in "aeiou" #tak glasnie vichiclit
+"""
+"""
+"""
+s = "banana"
+
+i = 0
+
+lenght = len(s)
+#while i < len(s):
+while i < lenght:
+    print(s[i], end="")
+    i+=1
+
+"""
+
+"""
+
+def count_vowels(s):
+    i = 0
+    lenght = len(s)
+    count = 0
+    # while i < len(s):
+    while i < lenght:
+        if s[i] in "aeiou":
+            count += 1
+        else:
+            pass
+        i += 1
+    return count
+
+
+s = "banana"
+
+
+assert count_vowels(s) == 3
+
+
+
+"""
+"""
+
+def count_vowels(s):
+    i = 0
+    lenght = len(s)
+    count = 0
+    for i in s:
+        if i in "aeiou":
+            count += 1
+    return count
+
+
+s = "banana"
+
+
+assert count_vowels(s) == 3
+"""
+
 
