@@ -1,57 +1,73 @@
-# THE MYSTICAL OCTOSPHERE!
+#-*- coding: utf-8 -*-
 
+"""
+#str.upper()
+s= "abc
+s.upper()
+"""
+"""
 
-import random
-import time
+s = "12345"
+print(len(s))
+"""
 
-print("Сияниче магического Шара сковало ваш взор...")
-time.sleep(0.5)
-questions = input(str("Задайте свой вопрос магическому Шару..." + "\n"))
-time.sleep(0.5)
+"""
+print(" a".strip())
+"""
 
-def number_to_fortune(num):
-    if num == 0:
-        return "Да, точно!"
+"""
+s = " John"
+" a".lstrip().rstrip() #ybiraet probeli v texte
+#"b ".rstrip()
+#s[0].isupper()
+"""
+"""
+email = "john@gmail.com"
 
-    elif num == 1:
-        return "Вероятно, да ..."
+#i = x.find("@")
+#name = x[:4]   # operator slith
 
-    elif num == 2:
-        return "Кажется, да ..."
+i = email.find("@")
+#print(i)
+name = email[:i]      #i = 4, 4ka eto nomer @ poschety do silmvolov
+print(name)
 
-    elif num == 3:
-        return "Определенно нет!"
+#if i < 0:     #esli index -1 to vernem pystyy stroky
+#    name = ""
+#else:
+#    name = email[:i}
 
-    elif num == 4:
-        return "Вероятно, нет"
+assert name == "john"
 
-    elif num == 5:
-        return "Я действительно в этом сомневаюсь ..."
+assert email[:email.find("@")] == "john"
 
-    elif num == 6:
-        return "Не уверен, зайдите позже!"
+"""
+"""
+#s[-1] - vertnet posledniy simvol stroki
+s = "abc"
+s.find("d") # vozvrshaet -1 (== -1 True)
+#esli Find ne ydalos naitit simvol on vernet -1
+"""
+"""
+text1 = "this is a sentence."
+text2 = "This is a question?"
 
-    elif num == 7:
-        return "Я действительно не могу сказать"
+#print(text1[-1])
 
-    else:
-        return "Я обычный шар, а не предсказатель!"
+last = text1[-1]
+#text2[-2]
 
-num = random.randrange(0, 7)
-time.sleep(0.5)
+if last == "?":
+    print("Question")
+else:
+    print("Asset")
+"""
+"""
+s = "Question"
+#s[:] polychim kopiy ishodnoi stroki - vse simvoli
+#print([s])
+"""
 
-#print(number_to_fortune(num))
-#TEST#print(number_to_fortune(17))
-#time.sleep(3) # zaderzka ispolnenia v 3 sec
-time.sleep(0.5)
+empty = ""
+empty[:]
 
-print("И так, Ваш вопрос ... - " + str(questions))
-time.sleep(1)
-
-print("Ты трясешь мистический Шар ...")
-time.sleep(0.8)
-
-print("Магические завихрения приковывают твой взор ...")
-time.sleep(0.6)
-
-print("Магический Шар говорит ..." + str(questions) + "\n" + (number_to_fortune(num)))
