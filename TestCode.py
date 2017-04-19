@@ -87,10 +87,28 @@ s = "banana"
 for i in s:
     print(i, end="")
 """
+"""
 s = "banana"
 
 i = 0
 
-while i < len(s):
+lenght = len(s)
+#while i < len(s):
+while i < lenght:
     print(s[i], end="")
     i+=1
+"""
+"""
+s = "abc"
+#"a" prinadlegit li "abc"
+
+
+if "abc".find("a") <0:
+    print("No") # esli net simvola to vernet -1
+else:
+    print("Yes")
+"""
+"""
+"a" in "abc" #True
+"""
+
