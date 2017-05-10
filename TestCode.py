@@ -182,6 +182,7 @@ assert count_volwes(s) == 3
 
 #print(len(list("aaa")))
 """
+"""
 
 s = "abba"
 
@@ -190,3 +191,83 @@ substr = "ab"
 #S.rindex(str, [start],[end])
 
 print(s.rfind("ab"))
+
+LECTURE 9 =======================================================
+"""
+"""
+A = [1, 2, 3, 4, 5]
+B = [2, 3]
+
+print(list(set(A) - set(B)))
+
+"""
+"""
+#SET
+
+#index - on je klych
+
+x = [1, 3, 2, 3, 5]
+print(list(set(x)))
+
+"""
+"""
+#korteji - ne izmenyaemie - a tak oni pohozi na spiski ( rabota s nimi bolee bistra)
+
+x = 10
+y = 20
+#swap x, y = y, x
+"""
+"""
+x = 1,2 #1,2 eto tuples
+print(x)
+"""
+"""
+x = 1, 2, 3, "a"
+print(x[3])
+
+"""
+"""
+
+# Пример создания словаря перевода английских слов на испанский язык
+eng2sp = {} # создаем пустой словарь с именем eng2sp
+eng2sp['one'] = 'uno' # добавляем очередной элемент в словарь
+eng2sp['two'] = 'dos' # добавляем очередной элемент в словарь
+
+"""
+"""
+
+eng2sp = dict(one="uno",
+              two="dos",
+              three="tres")
+"""
+"""
+#elementi iz slovara polychaytsa po klychy
+
+print(eng2sp["two"])
+"""
+
+"""
+day_weeks = {"1" : "PN",
+            "2" : "VT",
+            "3" : "SR"}
+print(day_weeks["2"])
+
+"""
+#klych v slovare perezapisivat nelza - ego mozno libo ydait libo dobavit
+
+"""
+L = []
+D = {"a" : 10}
+
+L.append(D)
+#print(L)
+
+D["a"] = 42
+L.append(D)
+
+print(L)
+
+#piton hranit dannie po ssilke - variant sozdat copy
+
+"""
+
