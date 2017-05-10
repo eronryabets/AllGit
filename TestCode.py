@@ -308,3 +308,9 @@ for word in corpus:
         hist[word] = 1
 
 print(hist)
+assert sum(hist.values()) == len(corpus)
+
+#sartirovka slovara po klychy nevozmozna
+#items vozrasaet spisok - a ego mozna otsortirovat yje
+
+sorted(hist.items(), key=lambda x: x[1])
