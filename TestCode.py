@@ -254,7 +254,6 @@ print(day_weeks["2"])
 
 """
 #klych v slovare perezapisivat nelza - ego mozno libo ydait libo dobavit
-
 """
 L = []
 D = {"a" : 10}
@@ -270,4 +269,42 @@ print(L)
 #piton hranit dannie po ssilke - variant sozdat copy
 
 """
+"""
+x = "b"
 
+#keys spicok vivedet klychei
+
+if x in D.keys():
+    print(D[x])
+"""
+"""
+vowels = {"a", "e", "i", "o", "u"}
+
+word = "hello"
+
+count = 0
+for ch in word :
+   if ch in vowels:
+       count += 1
+
+print(count)
+"""
+"""
+x = "a"
+
+if x in D:
+    print(D[x])
+
+"""
+
+corpus = ["slovo", "slovo", "slovo2"]
+
+hist = dict()
+
+for word in corpus:
+    if word in hist:
+        hist[word] += 1
+    else:
+        hist[word] = 1
+
+print(hist)
