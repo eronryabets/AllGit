@@ -297,6 +297,11 @@ if x in D:
 
 """
 
+"""
+
+
+
+
 corpus = ["slovo", "slovo", "slovo2"]
 
 hist = dict()
@@ -314,4 +319,42 @@ assert sum(hist.values()) == len(corpus)
 #items vozrasaet spisok - a ego mozna otsortirovat yje
 
 sorted(hist.items(), key=lambda x: x[1]) #x - eto kajdiy kortej v etom spiske
+
+
+"""
+#17 мая
+
+"""
+
+
+
+class Point:
+    pass
+
+blank = Point()
+print(type(blank))
+
+#sinstansiirovali Class/ obiavili noviy tip dannih
+
+
+"""
+
+#blak = Point()
+# blank = Point__init__
+
+class Point:
+    def __init__(self, x=0, y=0 ):
+        self.x = x
+        self.y = y
+
+
+    def show_point(self):
+        print("({}, {})".format(self.x, self.y))
+
+
+blank = Point() # Point.__init__()
+p1 = Point(2, 3) # Point.__init__(x=2, y=3)
+p2 = Point(2, 3)
+
+p1.show_point()
 
