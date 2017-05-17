@@ -393,7 +393,7 @@ class Navy:
         return sum(map(lambda x: x.get_duration(), self.boats))/len(self.boats)
 
     def get_max_duration(self):
-        return sum(map(lambda x: x.get_duration(), self.boats))/len(self.boats)
+        return max(map(lambda x: x.get_duration(), self.boats))
 
 navy = Navy([Boat("first", 10, 30),
              Boat("second", 15, 25),
