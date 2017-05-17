@@ -339,6 +339,7 @@ print(type(blank))
 
 """
 
+"""
 #blak = Point()
 # blank = Point__init__
 
@@ -347,6 +348,9 @@ class Point:
         self.x = x
         self.y = y
 
+    def __str__(self):
+        return "({}, {})".format(self.x, self.y)
+
 
     def show_point(self):
         print("({}, {})".format(self.x, self.y))
@@ -354,7 +358,47 @@ class Point:
 
 blank = Point() # Point.__init__()
 p1 = Point(2, 3) # Point.__init__(x=2, y=3)
-p2 = Point(2, 3)
+p2 = Point(3, 4) # Point.__init__(x=2, y=3)
 
-p1.show_point()
+p1.show_point() # Point.show_point(p1)
+
+#p1. posle to4ki imya obiecta i ego vizov
+# self - prosto imya peremennoi - "ykazatel na sebya"
+
+print(p1) #print(Point.__str__(p1))
+
+
+"""
+
+class Boat:
+    def __init__(self, name, start=0, finish=0):
+        self.name = name
+        self.start = start
+        self.finish = finish
+
+
+    def __str__(self):
+        return "{}".format(self.name)
+
+    def get_duration(self):
+        return self.finish - self.start
+
+class Navy:
+    def __init__(self, boats=[]):
+        self.boats = boats
+
+    def __str__(self):
+        pass
+    def get_average(selfself):
+        return sum(map(lambda x: x.get_duration(), self.boats))/len(self.boats)
+
+    def get_max_duration(self):
+        return sum(map(lambda x: x.get_duration(), self.boats))/len(self.boats)
+
+navy = Navy([Boat("first", 10, 30),
+             Boat("second", 15, 25),
+             Boat("third", 5, 20)])
+
+#print(sum(map(lambda x: x.finish - x.start, boats))/len(boats))
+#print(sum(map(lambda x: x.get_duration(), boats))/len(boats))
 
